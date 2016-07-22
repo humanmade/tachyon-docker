@@ -1,0 +1,28 @@
+{
+  "name": "tachyon-server",
+  "version": "1.0.0",
+  "description": "Containerised server for on the fly image resizing powered by libvips and sharp",
+  "main": "node_modules/node-tachyon/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node node_modules/node-tachyon/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/humanmade/tachyon-server.git"
+  },
+  "keywords": [
+    "image-resizing",
+    "sharp",
+    "libvips"
+  ],
+  "author": "Robert O'Rourke",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/humanmade/tachyon-server/issues"
+  },
+  "homepage": "https://github.com/humanmade/tachyon-server#readme",
+  "dependencies": {
+    "node-tachyon": "github:humanmade/node-tachyon"
+  }
+}
