@@ -10,7 +10,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.box = "debian/jessie64"
 
-  # Tachyon runs on tachyon.srv
+  # Tachyon runs on tchyn.srv
   # S3 runs on s3.srv
   config.vm.network :private_network, ip: settings['ip']
   config.vm.hostname = settings['hostname']
