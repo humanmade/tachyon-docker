@@ -1,0 +1,10 @@
+---
+ip: "192.168.80.80"
+hostname: "tachyon.server"
+aliases:
+  s3: "s3.srv"
+instances:
+  "tchyn.srv":
+    region: "eu-west-1"
+    bucket: "local"
+    endpoint: "http://s3.srv/"

@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/humanmade/tachyon-server#readme",
   "dependencies": {
-    "node-tachyon": "github:humanmade/node-tachyon"
+    "node-tachyon": "git://github.com/humanmade/node-tachyon.git#develop"
   }
 }

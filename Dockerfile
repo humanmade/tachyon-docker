@@ -13,8 +13,10 @@ RUN [ "apt-get", "install", "-y", "libvips-tools" ]
 COPY package.json /srv/tachyon/
 RUN [ "npm", "install" ]
 
-# Copy config in
-COPY config.json /srv/tachyon/
+# Enable env vars
+ARG AWS_REGION
+ARG AWS_S3_BUCKET
+ARG AWS_S3_ENDPOINT
 
 # Start the reactor
 EXPOSE 8080
