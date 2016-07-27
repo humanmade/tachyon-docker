@@ -4,7 +4,7 @@
 			<h1>Tachyon Docker</h1>
 			Containerised Tachyon server for on the fly image resizing.
 		</td>
-		<td align="right" width="20%">
+		<td align="right" width="30%">
 			<a href="https://hub.docker.com/r/humanmade/tachyon"><img src="http://dockeri.co/image/humanmade/tachyon" /></a>
 		</td>
 	</tr>
