@@ -1,14 +1,29 @@
-# Tachyon Docker
-
-Specifies a Docker container for a Tachyon on-the-fly image resizing
-server.
+<table width="100%">
+	<tr>
+		<td align="left" width="70">
+			<h1>Tachyon Docker</h1>
+			Containerised Tachyon server for on the fly image resizing.
+		</td>
+		<td align="right" width="20%">
+			<a href="https://hub.docker.com/r/humanmade/tachyon"><img src="http://dockeri.co/image/humanmade/tachyon" /></a>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			A <strong><a href="https://hmn.md/">Human Made</a></strong> project. Maintained by @roborourke.
+		</td>
+		<td align="center">
+			<img src="https://hmn.md/content/themes/hmnmd/assets/images/hm-logo.svg" width="100" />
+		</td>
+	</tr>
+</table>
 
 ## Usage
 
 You can pull the image using:
 
 ```sh
-docker pull roborourke/tachyon
+docker pull humanmade/tachyon
 ```
 
 Or build the Dockerfile locally.
