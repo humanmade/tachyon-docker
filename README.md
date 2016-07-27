@@ -1,7 +1,7 @@
-# Tachyon Server
+# Tachyon Docker
 
-Docker container for a Tachyon server. This also optionally adds a 
-fake S3 server that you can use for local development.
+Specifies a Docker container for a Tachyon on-the-fly image resizing
+server.
 
 ## Usage
 
