@@ -44,7 +44,7 @@ Vagrant.configure(2) do |config|
     d.pull_images "smaj/spurious-s3"
     d.run "s3",
       image: "smaj/spurious-s3",
-      args: "-p 4569:4569 -v /app/s3:/var/data/fake_s3 \
+      args: "-p 4569:4569 -v /app/s3:/var/data/fake-s3 \
         -e VIRTUAL_HOST=#{settings['aliases']['s3']}"
 
     # Tachyon servers

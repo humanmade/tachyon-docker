@@ -29,6 +29,7 @@ are a few ways to do this:
   ```
   --add-host <s3-host>:<ip>
   ```
+
 2. Link the container to your s3 container and use that endpoint 
   ```
   --link s3
@@ -71,19 +72,19 @@ And add a small script to your mu-plugins:
 
 ```php
 <?php
-add_filter( 's3_uploads_s3_client_params' function( $params ) {
+add_filter( 's3_uploads_s3_client_params', function( $params ) {
     $params['endpoint'] = 'http://s3.srv/';
     $params['path_style'] = true;
     //$params['debug'] = true; // Useful if things aren't working to double check IPs etc
     return $params;
-}' );
+} );
 ```
 
 You can then install the
-[WordPress Tachyon plugin](https://github.com/humanmade/tachyon-wordpress)
+[WordPress Tachyon plugin](https://github.com/humanmade/tachyon-plugin)
 and configure it:
 
 ```php
 // Tachyon URL
-define( 'TACHYON_URL', 'http://tchyn.srv/local' );
+define( 'TACHYON_URL', 'http://tchyn.srv/uploads' );
 ```
