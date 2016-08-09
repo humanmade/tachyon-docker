@@ -10,8 +10,8 @@ RUN [ "apt-get", "install", "-y", "libvips", "--no-install-recommends" ]
 RUN [ "apt-get", "install", "-y", "libvips-tools" ]
 
 # Get app
-COPY package.json /srv/tachyon/
-RUN [ "npm", "install" ]
+COPY node-tachyon /srv/tachyon/
+RUN [ "npm", "install", "node-tachyon" ]
 
 # Enable env vars
 ARG AWS_REGION

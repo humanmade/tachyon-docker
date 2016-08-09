@@ -1,0 +1,3 @@
+[submodule "node-tachyon"]
+	path = node-tachyon
+	url = git@github.com:humanmade/node-tachyon.git

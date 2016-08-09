@@ -5,7 +5,7 @@
   "main": "node_modules/node-tachyon/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node node_modules/node-tachyon/server.js"
+    "start": "node node-tachyon/server.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,4 @@
     "url": "https://github.com/humanmade/tachyon-docker/issues"
   },
   "homepage": "https://github.com/humanmade/tachyon-docker#readme",
-  "dependencies": {
-    "node-tachyon": "git://github.com/humanmade/node-tachyon.git"
-  }
 }
