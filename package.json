@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/humanmade/tachyon-docker#readme",
   "dependencies": {
-    "node-tachyon": "git://github.com/humanmade/node-tachyon.git#master"
+    "node-tachyon": "git://github.com/humanmade/node-tachyon.git"
   }
 }
