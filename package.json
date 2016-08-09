@@ -4,8 +4,7 @@
   "description": "Containerised server for on the fly image resizing powered by libvips and sharp",
   "main": "node_modules/node-tachyon/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node node-tachyon/server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
