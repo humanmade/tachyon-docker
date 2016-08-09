@@ -49,11 +49,11 @@ Vagrant.configure(2) do |config|
 
     # Tachyon servers
     d.build_image "/app",
-      args: "-t 'humanmade/tachyon-server'"
+      args: "-t 'humanmade/tachyon'"
     settings['instances'].each { |host,args|
       config.hostsupdater.aliases << host
       d.run "#{host}",
-        image: "humanmade/tachyon-server",
+        image: "humanmade/tachyon",
         args: " \
           -e VIRTUAL_HOST=#{host} \
           -e AWS_REGION=#{args['region']} \
