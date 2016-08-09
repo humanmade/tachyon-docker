@@ -32,9 +32,11 @@ The container should always be run with the following environment variables:
 
 ```sh
 docker run -d \
+  --name tachyon
   -e AWS_REGION=<region> \
   -e AWS_S3_BUCKET=<bucket> \
   -e AWS_S3_ENDPOINT=<endpoint>
+  humanmade/tachyon
 ```
 
 You may need to ensure that the container can see your S3 server. There
