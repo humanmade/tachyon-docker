@@ -1,10 +1,9 @@
-FROM node:4
+FROM node:slim
 MAINTAINER Robert O\'Rourke "rob@hmn.md"
 
 # Install libvips
 RUN [ "apt-get", "update" ]
-RUN [ "apt-get", "install", "-y", "libvips", "--no-install-recommends" ]
-RUN [ "apt-get", "install", "-y", "libvips-tools" ]
+RUN [ "apt-get", "install", "-y", "make", "g++", "python", "libvips", "--no-install-recommends" ]
 
 # Get app
 COPY node-tachyon /srv/tachyon/
