@@ -2,7 +2,7 @@ FROM node:slim
 MAINTAINER Robert O\'Rourke "rob@hmn.md"
 
 # Install libvips
-RUN [ "apt-get", "update" ]
+RUN [ "apt-get", "update", "--fix-missing" ]
 RUN [ "apt-get", "install", "-y", "make", "g++", "python", "libvips", "--no-install-recommends" ]
 
 # Get app
