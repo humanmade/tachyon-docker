@@ -65,6 +65,13 @@ This repo comes with a `Vagrantfile` to let you set up a local instance
 or instances of Tachyon coupled to a fake S3 server courtesy of
 [the fake-s3 project](https://github.com/jubos/fake-s3).
 
+## Vagrant Plugins
+
+You'll need to install two Vagrant plugins for this container to provision correctly.
+
+1. `vagrant plugin install vagrant-hostsupdater`
+2. `vagrant plugin install vagrant-vbguest`
+
 Make sure to do a recursive clone of this repo:
 
 ```sh
