@@ -1,6 +1,6 @@
 {
   "name": "tachyon-docker",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Containerised server for on the fly image resizing powered by libvips and sharp",
   "main": "node_modules/node-tachyon/server.js",
   "scripts": {
@@ -13,7 +13,8 @@
   "keywords": [
     "image-resizing",
     "sharp",
-    "libvips"
+    "libvips",
+    "smart-crop"
   ],
   "author": "Robert O'Rourke",
   "license": "GPL-3.0",
