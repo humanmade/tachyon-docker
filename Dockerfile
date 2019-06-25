@@ -21,7 +21,8 @@ RUN apk del build-deps
 ARG AWS_REGION
 ARG AWS_S3_BUCKET
 ARG AWS_S3_ENDPOINT
+ARG PORT
 
 # Start the reactor
-EXPOSE 8080
-CMD node server.js
+EXPOSE ${PORT:-8080}
+CMD node server.js ${PORT:-8080}
