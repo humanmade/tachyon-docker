@@ -41,7 +41,7 @@ docker run -d \
   --name tachyon
   -e AWS_REGION=<region> \
   -e AWS_S3_BUCKET=<bucket> \
-  -e AWS_S3_ENDPOINT=<endpoint>
+  -e AWS_S3_ENDPOINT=<endpoint> \
   humanmade/tachyon
 ```
 
@@ -58,6 +58,23 @@ are a few ways to do this:
   --link s3
   -e AWS_S3_ENDPOINT=http://s3:<s3-port>/
   ```
+
+## Running on a custom port
+
+Because the default port for the service is `8080` you can customise this for better compatibility with docker compose and reverse proxies like Traefik that assign dynamic ports for services unless specifically mapped.
+
+Pass the `PORT` environment variable on start up like so:
+
+```yml
+services:
+  tachyon:
+    image: humanmade/tachyon
+    environment:
+      PORT: 8085
+      AWS_REGION: ...
+      AWS_S3_BUCKET: ...
+      AWS_S3_ENDPOINT: ...
+```
 
 ## Vagrant
 
