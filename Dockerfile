@@ -2,10 +2,10 @@ FROM node:8-alpine
 
 # Install build base
 RUN apk --update add --no-cache \
-	--repository http://dl-cdn.alpinelinux.org/alpine/edge/testing \
+	--repository http://dl-cdn.alpinelinux.org/alpine/edge/community \
 	--virtual build-deps fftw-dev gcc g++ make libc6-compat python
 RUN apk --update add --no-cache \
-	--repository http://dl-cdn.alpinelinux.org/alpine/edge/testing \
+	--repository http://dl-cdn.alpinelinux.org/alpine/edge/community \
 	vips-dev
 
 # Get app
