@@ -1,4 +1,4 @@
-FROM node:8-alpine
+FROM node:10-alpine
 
 # Install build base
 RUN apk --update add --no-cache \
